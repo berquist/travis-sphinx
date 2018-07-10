@@ -50,7 +50,7 @@ def deploy(ctx, branches, cname, message, deploy_host):
     """
     branch = os.environ.get('TRAVIS_BRANCH', '')
     pr = os.environ.get('TRAVIS_PULL_REQUEST', '')
-    token = os.environ.get('GH_TOKEN', '')
+    token = os.environ.get('GH_TOKEN')
     repo = os.environ.get('GH_REPO_SLUG')
     if repo is None:
         repo = os.environ.get('TRAVIS_REPO_SLUG', '')

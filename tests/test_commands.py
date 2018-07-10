@@ -55,7 +55,7 @@ def test_build():
         assert os.path.exists(os.path.join(output_dir, 'index.html'))
 
 
-def test_buid_with_warning():
+def test_build_with_warning():
     runner = CliRunner()
     with runner.isolated_filesystem() as tmpDir:
         # sphinx will issue warnings when generating the documentations.
